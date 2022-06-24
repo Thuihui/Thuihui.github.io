@@ -1,0 +1,44 @@
+/* 格式化样式 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+}
+
+.main{
+    padding-bottom: 100px;
+}
+/* main2重写 */
+.main2 .photo div img{
+    width: 600px;
+    height: 450px;
+}
+
+.main2 .photo .backround-img1 img{
+    width: 600px;
+    height: 925px;
+}
+
+.main2 .photo{
+    grid-template-columns: repeat(2,600px);
+    grid-template-rows: 450px 450px;
+    grid-template-areas:  'a c'
+                          'b c'
+;
+}
+
+
+/* 将 子div与grid布局单元格对应 */
+.main2 .photo div:nth-child(1){
+    grid-area: a;
+}
+.main2 .photo div:nth-child(2){
+    grid-area: c;
+}
+.main2 .photo div:nth-child(3){
+    grid-area: b;
+}
+

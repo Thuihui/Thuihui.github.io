@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photogenic</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+    <!-- 页眉 导航栏 -->
+    <!-- 采用fixed  头像采用嵌套absolute -->
+    <!-- 导航栏float：left -->
+    <header>
+        <div class="top-img">
+            <a href="logo-nav">
+                <img src="./css/images/头像.jpg" alt="logo">
+            </a>
+        </div>
+
+        <div class="nav-container">
+            <ul class="ul-nav">
+                <li class="li-nav">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="li-nav">
+                    <a class="nav-link" href="my treasure.html">treasure</a>
+                </li>
+                <li class="li-nav">
+                    <a class="nav-link" href="my life.html">my life</a>
+                </li>
+                <li class="li-nav">
+                    <a class="nav-link" href="contact.html">contact</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- 页眉 导航栏 -->
+
+    <!-- 介绍栏 -->
+    <!-- 采用横向flex布局   flex-direction：row -->
+    <div class="slider-container">
+        <div class="left-slider">
+            <div id="left">
+                <h1>Hello</h1>
+                <h2>I'm Tian HuiHui</h2>
+                <p>
+                    A New Web Developer,Form Zuel
+                </p>
+                <div>
+                    <a href="./about.html">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 图片采用背景图片方式ha -->
+        <div class="right-slider">
+            <div class="bg-img1"></div>
+        </div>
+    </div>
+    <!-- 介绍栏 -->
+    
+      
+    <!-- =主界面 -->
+    <div class="main">
+        <!-- 横向flex布局 -->
+        <div class="introduction flex1">
+            <h3 class="title-style">生活碎片</h3>
+                <p> 学习 健身 楼外的蒹葭 湖边的落日 身边的她<br>
+                    珍惜当下 追那一轮落日 
+                </p>
+        </div>
+
+        <!-- 生活图片采用grid布局  其中第三个子div占两行 -->
+        <div class="photo grid">
+            <div class="backround-img">
+                <img src="./css/images/index-1.jpg" alt="">
+            </div>
+            <div class="backround-img">
+                <img src="./css/images/index-2.jpg" alt="">
+            </div>
+            <div class="backround-img1">
+                <img src="./css/images/index-3.jpg" alt="">
+            </div>
+            <div class="backround-img">
+                <img src="./css/images/index-4.jpg" alt="">
+            </div>
+            <div class="backround-img">
+                <img src="./css/images/index-5.jpg" alt="">
+            </div>
+        </div>
+
+        <!-- （横向）flex布局中嵌套（纵向）flex布局 -->
+        <div class="statistics flex">
+            <div class="counter flex1">
+                <div>
+                    <img src="./css/images/index-学校.png" alt="Happy">
+                </div>
+                <h1>中南财经政法大学</h1>              
+                <p>信息与安全工程学院-信管2001</p>
+            </div>
+            <div class="counter flex1">
+                <div>
+                    <img src="./css/images/index-身份.png" alt="Happy">
+                </div>
+                <h1>郭烁</h1>              
+                <p>湖北人 生于2002年<br>
+                    摄影 美食爱好者 旅游  风景 
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 页脚 -->
+    <footer class="b4">
+        <!-- 第一行采用 横向的flex布局 -->
+        <div class="header-footer flex">
+            <h1> Contact Me</h1>
+            <div class="link-footer">
+                <a href=""><img src="./css/images/index-微信.png" alt=""></a>
+                <a href=""><img src="./css/images/index-QQ.png" alt=""></a>
+                <a href=""><img src="./css/images/index-github.png" alt=""></a>
+            </div>
+        </div>
+
+        <!-- 横向flex布局  3个单元格 -->
+        <div class="main-footer flex">
+            <div class="phone container-footer">
+                <div>
+                    <h5>Phone</h5>
+                    <h5><a href="">15926072152</a></h5>
+                </div>
+
+                <div class="email">
+                    <h5>E-mail</h5>
+                    <h5> <a href="">3434518927@qq.com</a></h5>
+                </div>
+            </div>
+            <div class="support-link container-footer">
+                <h2>Support Links</h2>
+                <ul>
+                    <li><a href="www.github.com">Github</a></li>
+                    <li><a href="www.zuel.edu.cn">Zuel</a></li>
+                    <li><a href="./contact.html">Contact me</a></li>
+                    <li><a href="">Support</a></li>
+                </ul>
+            </div>
+            <div class="address container-footer">
+                <h5>中南财经政法大学 <br>
+                    信息与安全工程学院, <br> 湖北省 武汉市.</h5>
+                <h5 class="date">Everyday: <span> 7 AM - 8 PM</span></h5>
+            </div>
+        </div>
+
+        <!-- 版权 -->
+        <div class="copy-footer">
+            <p>&copy;2022 my life. All rights reserved. Design by TianHuiHui</p>
+        </div>
+    </footer>
+    <!-- 页脚 -->
+</body>
+</html>

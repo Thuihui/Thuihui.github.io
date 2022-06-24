@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+    <!-- 页眉 导航栏 -->
+    <!-- 采用fixed  头像采用嵌套absolute -->
+    <!-- 导航栏float：left -->
+    <header>
+        <div class="top-img">
+            <a href="logo-nav">
+                <img src="./css/images/头像.jpg" alt="logo">
+            </a>
+        </div>
+
+        <div class="nav-container">
+            <ul class="ul-nav">
+                <li class="li-nav">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="li-nav">
+                    <a class="nav-link" href="my treasure.html">treasure</a>
+                </li>
+                <li class="li-nav">
+                    <a class="nav-link" href="my life.html">my life</a>
+                </li>
+                <li class="li-nav">
+                    <a class="nav-link" href="contact.html">contact</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- 页眉 导航栏 -->
+
+    <!-- 图片采用背景图片方式插入 -->
+    <div class="contact-photo con-p-1">
+
+    </div>
+
+    <!-- main区域 -->
+    <!-- 表单 -->
+    <div class="contact-main">
+        <!-- 介绍栏 纵向flex布局 -->
+        <div class="introduction flex1">
+            <h3 class="title-style">Contact Me</h3>
+                <p>Welcome to learn and use. <br>
+                    If you have any suggestions or questions, please contact.</p>
+        </div>
+        <!-- contact区 横向flex布局 -->
+        <div class="contact-container flex">
+            <div class="contact-left">
+                <h3 class="title-style">Contact Details</h3>
+                <div class="Details flex1">
+                    <div class="De">
+                        <h6>Affiliated unit</h6>
+                        <p>中南财经政法大学 信管2001</p>
+                    </div>
+                    <div class="De">
+                        <h6>Call Me</h6>
+                        <p><a href="">15926072152</a></p>
+                    </div>
+                    <div class="De">
+                        <h6>Email Me</h6>
+                        <p><a href="">3434518927@qq.com</a></p>
+                    </div>
+                    <div class="De">
+                        <h6>Customer Support</h6>
+                        <p><a href="">only for study</a></p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 表单区域 -->
+            <div class="contact-right">
+                <form action="host" method="get">
+                    <div class="contact-grid">
+                        <p>
+                            <input type="text" name="form-name" class="contact-input" id="form-name"
+                                placeholder="  Your Name*">
+                                <!-- 提示"your name" -->
+                        </p>
+                        <p>
+                            <input type="text" name="form-email" class="contact-input" id="form-email"
+                                placeholder="  Your Email*">
+                                <!-- 提示"your email" -->
+                        </p>
+                        <p>
+                            <input type="text" name="form-subject" class="contact-input" id="form-subject"
+                                placeholder="  Subject*">
+                        </p>
+                        <p>
+                            <input type="text" name="form-url" class="contact-input" id="form-url"
+                                placeholder="  Website URL*">
+                        </p>
+                        <!-- textarea区 -->
+                        <p id="textarea">
+                            <textarea name="form-text" class="contact-textarea" id="form-text" cols="30" rows="10"></textarea>
+                        </p>
+                        <p>
+                            <input type="submit" value="Send Message" name="form-submit" class="input-submit" id="form-submit">
+                        </p>
+                    </div>
+                </form>
+            </div>
+            <!-- 表单区域 -->
+        </div>
+    </div>
+
+      <!-- web学习网站推荐区 -->
+      <table class=table>
+        <tr>
+            <th>Web_Name</th>
+            <th>Web_Url</th>
+            <th>Characteristic</th>
+        </tr>
+        <tr>
+            <td>Net Tuts+</td>
+            <td>https://code.tutsplus.com/</td>
+            <td>学习Web开发技术最著名的网站之一,适合不同阶段的开发人员阅读</td>
+        </tr>
+        <tr>
+            <td>CSS Tricks</td>
+            <td>https://css-tricks.com/</td>
+            <td>CSS Tricks 是学习CSS的最佳去处,发布关于CSS各个方面的教程</td>
+        </tr>
+        <tr>
+            <td>W3Schools</td>
+            <td>https://www.w3schools.com/</td>
+            <td>W3Schools  拥有非常齐全的 Web 开发技术资料</td>
+        </tr>
+        <tr>
+            <td>Webmonkey</td>
+            <td>https://www.webmonkey.com/</td>
+            <td>Webmonkey 分享各种 Web 开发和设计文章</td>
+        </tr>
+    </table>
+    <!-- web学习网站推荐 -->
+
+
+    <!-- 背景图片 -->
+    <div class="contact-photo con-p-2">
+
+    </div>
+
+  
+    <!-- 页脚 -->
+    <footer class="b4">
+        <!-- 第一行采用 横向的flex布局 -->
+        <div class="header-footer flex">
+            <h1> Contact Me</h1>
+            <div class="link-footer">
+                <a href=""><img src="./css/images/index-微信.png" alt=""></a>
+                <a href=""><img src="./css/images/index-QQ.png" alt=""></a>
+                <a href=""><img src="./css/images/index-github.png" alt=""></a>
+            </div>
+        </div>
+
+        <!-- 横向flex布局  3个单元格 -->
+        <div class="main-footer flex">
+            <div class="phone container-footer">
+                <div>
+                    <h5>Phone</h5>
+                    <h5><a href="">15926072152</a></h5>
+                </div>
+
+                <div class="email">
+                    <h5>E-mail</h5>
+                    <h5> <a href="">3434518927@qq.com</a></h5>
+                </div>
+            </div>
+            <div class="support-link container-footer">
+                <h2>Support Links</h2>
+                <ul>
+                    <li><a href="www.github.com">Github</a></li>
+                    <li><a href="www.zuel.edu.cn">Zuel</a></li>
+                    <li><a href="./contact.html">Contact me</a></li>
+                    <li><a href="">Support</a></li>
+                </ul>
+            </div>
+            <div class="address container-footer">
+                <h5>中南财经政法大学 <br>
+                    信息与安全工程学院, <br> 湖北省 武汉市.</h5>
+                <h5 class="date">Everyday: <span> 7 AM - 8 PM</span></h5>
+            </div>
+        </div>
+
+        <!-- 版权 -->
+        <div class="copy-footer">
+            <p>&copy;2022 my life. All rights reserved. Design by TianHuiHui</p>
+        </div>
+    </footer>
+    <!-- 页脚 -->
+</body>
+</html>

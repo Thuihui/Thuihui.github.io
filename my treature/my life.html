@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Life</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/services.css">
+</head>
+<body>
+    <!-- 页眉 导航栏 -->
+    <!-- 采用fixed  头像采用嵌套absolute -->
+    <!-- 导航栏float：left -->
+    <header>
+        <div class="top-img">
+            <a href="logo-nav">
+                <img src="./css/images/头像.jpg" alt="logo">
+            </a>
+        </div>
+
+        <div class="nav-container">
+            <ul class="ul-nav">
+                <li class="li-nav">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="li-nav">
+                    <a class="nav-link" href="my treasure.html">treasure</a>
+                </li>
+                <li class="li-nav">
+                    <a class="nav-link" href="my life.html">my life</a>
+                </li>
+                <li class="li-nav">
+                    <a class="nav-link" href="contact.html">contact</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- 页眉 导航栏 -->
+
+     <!-- =主界面 -->
+     <div class="main-my_life">
+        <div class="main main1">
+            <!-- 横向flex布局 -->
+            <div class="introduction flex1">
+                <h3 class="title-style">美丽瞬间</h3>
+                    <p> 最美的瞬间,除了欣赏,也需要记录 
+                    </p>
+            </div>
+
+            <!-- 生活图片采用grid布局  其中第三个子div占两行 -->
+            <div class="photo grid">
+                <div class="backround-img">
+                    <img src="./css/images/my_life4.jpg" alt="">
+                </div>
+                <div class="backround-img">
+                    <img src="./css/images/my_life6.jpg" alt="">
+                </div>
+                <div class="backround-img1">
+                    <img src="./css/images/my_life5.jpg" alt="">
+                </div>
+                <div class="backround-img">
+                    <img src="./css/images/my_life7.jpg" alt="">
+                </div>
+                <div class="backround-img">
+                    <img src="./css/images/my_life8.jpg" alt="">
+                </div>
+            </div>
+
+            </div>
+        </div>
+
+        <div class="main main2">
+            <!-- 横向flex布局 -->
+            <div class="introduction flex1">
+                <h3 class="title-style">健身记录</h3>
+                    <p> 强健体魄,磨练灵魂.<br>
+                        身为中国男儿,国家兴亡,匹夫有责!
+                    </p>
+            </div>
+
+            <!-- 健身图片采用grid布局 -->
+            <div class="photo grid">
+                <div class="backround-img">
+                    <img src="./css/images/my_life1.jpg" alt="">
+                </div>
+                <div class="backround-img1">
+                    <img src="./css/images/my_life2.jpg" alt="">
+                </div>
+                <div class="backround-img">
+                    <img src="./css/images/my_life3 .jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="b4">
+        <!-- 第一行采用 横向的flex布局 -->
+        <div class="header-footer flex">
+            <h1> Contact Me</h1>
+            <div class="link-footer">
+                <a href=""><img src="./css/images/index-微信.png" alt=""></a>
+                <a href=""><img src="./css/images/index-QQ.png" alt=""></a>
+                <a href=""><img src="./css/images/index-github.png" alt=""></a>
+            </div>
+        </div>
+
+        <!-- 横向flex布局  3个单元格 -->
+        <div class="main-footer flex">
+            <div class="phone container-footer">
+                <div>
+                    <h5>Phone</h5>
+                    <h5><a href="">15926072152</a></h5>
+                </div>
+
+                <div class="email">
+                    <h5>E-mail</h5>
+                    <h5> <a href="">3434518927@qq.com</a></h5>
+                </div>
+            </div>
+            <div class="support-link container-footer">
+                <h2>Support Links</h2>
+                <ul>
+                    <li><a href="www.github.com">Github</a></li>
+                    <li><a href="www.zuel.edu.cn">Zuel</a></li>
+                    <li><a href="./contact.html">Contact me</a></li>
+                    <li><a href="">Support</a></li>
+                </ul>
+            </div>
+            <div class="address container-footer">
+                <h5>中南财经政法大学 <br>
+                    信息与安全工程学院, <br> 湖北省 武汉市.</h5>
+                <h5 class="date">Everyday: <span> 7 AM - 8 PM</span></h5>
+            </div>
+        </div>
+
+        <!-- 版权 -->
+        <div class="copy-footer">
+            <p>&copy;2022 my life. All rights reserved. Design by TianHuiHui</p>
+        </div>
+    </footer>
+    <!-- 页脚 -->
+</body>
+</html>

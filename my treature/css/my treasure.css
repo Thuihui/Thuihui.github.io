@@ -1,0 +1,193 @@
+
+/* 背景图片样式 */
+.about-photo{
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* 图片大小：覆盖 */
+    background-position: center;
+    height: 40vh;
+    /* 使用cover必须指定高度,宽度 */
+    width: 100%;
+    margin-top: 100px;
+    background-image: url(./images/treasure-2.jpg);
+}
+
+.slider-about{
+    width: 90%;
+    margin: 100px auto;
+    /* 左右居中 */
+}
+
+.sli-abo-left{
+    height: 400px;
+    width: 550px;
+    align-items: flex-start;
+    /* 副轴元素排列顺序 */
+}
+
+.sli-abo-right{
+    height: 400px;
+    width: 550px;
+    background-image: url(./images/treasure-3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* 图片大小：覆盖 */
+    background-position: center;
+    /* 位置居中 */
+}
+
+.sli-abo-left p{
+    line-height: 32px;
+    font-size: 18px;
+    color: #2f4f4f;
+}
+
+.sli-abo-left ul{
+    list-style-position: outside;
+    list-style: circle;
+    /* 列表符号 */
+}
+
+.sli-abo-left li{
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+div.sli-left-a{
+    border: solid 1px red;
+    border-radius: 25px;
+    width: 200px;
+    height: 50px;
+    background-color: red;
+    color: #fff;
+    line-height: 50px;
+    font-size: 17px;
+    font-weight: 800;
+    text-align: center;
+}
+
+
+.photo{
+    padding-bottom: 100px;
+}
+
+/* 重写grid布局 划分新区域 */
+.grid{
+    grid-template-areas:  'a d c'
+                          'b e c'
+;
+/* 划分出2行三列的单元格 */
+/* c为一各两行的单元格 */
+}
+
+/* 图片区 单元格大小 */
+.photo div img{
+    width: 400px;
+    height: 300px;
+
+}
+
+.photo div.backround-img1 img{
+    width: 400px;
+    height: 625px;
+}
+
+/* 将 子div与grid布局单元格对应 */
+.photo div:nth-child(1){
+    grid-area: a;
+}
+.photo div:nth-child(2){
+    grid-area: b;
+}
+
+/*第三个div对应c区域  占两行*/
+.photo div:nth-child(3){
+    grid-area: c;
+}
+.photo div:nth-child(4){
+    grid-area: d;
+}
+.photo div:nth-child(5){
+    grid-area: e;
+}
+
+
+/* blog区样式 */
+.blogs-about{
+    padding-bottom: 100px;
+}
+.header-blogs{
+    row-gap: 30px;
+    /* blog间隔 */
+    padding-bottom: 100px;
+}
+
+.main-blogs{
+    column-gap: 50px;
+}
+
+.main-blogs .blogs{
+    width: 350px;
+    height: 500px;
+    background-color: antiquewhite;
+}
+
+.blogs-photo{
+    width: 100%;
+    height: 220px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* 背景图片方式实现图片插入 */
+.blo-p-1{
+    background-image: url(./images/treasure-5.jpg);
+}
+.blo-p-2{
+    background-image: url(./images/treasure-6.jpg);
+}
+.blo-p-3{
+    background-image: url(./images/treasure-7.jpg);
+}
+
+.tex-ma{
+    justify-content: center;
+    width: 100%;
+    column-gap: 0;
+}
+
+.photographer{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+
+
+.tex-ma p{
+    width: 100px;
+    font-weight: 800;
+}
+
+.text-main-blo h5,h4,p{
+    width: 90%;
+    margin: 0px auto;
+    /* 实现左右居中 */
+    margin-bottom: 10px;
+}
+
+.text-main-blo h5{
+    font-size: 16px;
+    font-weight: 400;
+    color: red;
+}
+.text-main-blo h4{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.text-main-blo p{
+    margin-bottom: 0;
+    font-weight: 400;
+}

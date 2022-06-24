@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Treasure</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/my treasure.css">
+    <link rel="stylesheet" href="./css/about.css">
+</head>
+<body>
+     <!-- 页眉 导航栏 -->
+    <!-- 采用fixed  头像采用嵌套absolute -->
+    <!-- 导航栏float：left -->
+    <header>
+        <div class="top-img">
+            <a href="logo-nav">
+                <img src="./css/images/头像.jpg" alt="logo">
+            </a>
+        </div>
+
+        <div class="nav-container">
+            <ul class="ul-nav">
+                <li class="li-nav">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="li-nav">
+                    <a class="nav-link" href="my treasure.html">treasure</a>
+                </li>
+                <li class="li-nav">
+                    <a class="nav-link" href="my life.html">my life</a>
+                </li>
+                <li class="li-nav">
+                    <a class="nav-link" href="contact.html">contact</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- 页眉 导航栏 -->
+
+    <!-- 背景图片 -->
+    <div class="about-photo con-p-1">
+        
+    </div>
+    <!-- 背景图片 -->
+
+    <!-- 介绍页面  flex布局-->
+    <div class="slider-about flex">
+        <div class="sli-abo-left flex1">
+            <h3 class="title-style">Few Words About Us!</h3>
+            <p>We met on November 11th, which was the<br>
+                second day of my birthday.This is the most precious gift I have ever received.<br>Your coming
+                 brings me endless meaning.</p>
+            <div>
+                <ul>
+                    <li>I still doubt that you should 
+                        be a dream</li>
+                    <li>We have experienced infinite beauty,
+                        baby</li>
+                    <li>No matter how beautiful the
+                         spring breeze is, it can't 
+                         compare with your smile.</li>
+                </ul>
+            </div>
+            <div class="sli-left-a"><a href="./css/my treasure.css">View Our life</a></div>
+        </div>
+
+        <!-- 图片采背景图片方式插入 -->
+        <div class="sli-abo-right con-p-1">
+        </div>
+
+    </div>
+    <!-- 介绍页面 -->
+
+    <!-- 图片页 采用grid布局 -->
+    <div class="photo grid">
+        <div class="backround-img">
+            <img src="./css/images/treasure-back1.jpg" alt="">
+        </div>
+        <div class="backround-img">
+            <img src="./css/images/treasure-bak2.jpg" alt="">
+        </div>
+        <div class="backround-img1">
+            <img src="./css/images/treasure-back5.jpg" alt="">
+        </div>
+        <div class="backround-img">
+            <img src="./css/images/treasure-back4.jpg" alt="">
+        </div>
+        <div class="backround-img">
+            <img src="./css/images/treasure-bak3.jpg" alt="">
+        </div>
+    </div>
+    <!-- 图片区  采用grid布局 -->
+
+    <!-- blog区 采用flex里嵌套flex -->
+    <div class="blogs-about">
+        <!-- blog-标题区 -->
+        <div class="header-blogs introduction flex1">
+            <h3 class="title-style">Latest Blog Posts</h3>
+            <p>The end of the period is approaching <br>
+                In addition to learning, there are many beautiful moments worth remembering.</p>
+        </div>
+        <!-- blog-标题区 -->
+
+        <!-- blog-main区   嵌套flex布局 -->
+        <div class="main-blogs flex">
+            <div class="blog-1 blogs">
+                <div class="blo-p-1 blogs-photo">
+                </div>
+
+                <div class="text-main-blo">
+                    <div class="flex tex-ma">
+                        <p>June 06, 2022</p>
+                    </div>
+                    <h5>落日之旅</h5>
+                    <h4><a href="">Falling in love with you at the first sunset</a></h4>
+                    <p>一车两人,下课后直奔环湖。<br>
+                        夕阳倾斜在你身上,
+                        最美的风景也不过如此</p>
+                </div>
+            </div>
+            <div class="blog-2 blogs">
+                <div class="blo-p-2 blogs-photo">
+
+                </div>
+                <div class="text-main-blo">
+                    <div class="flex tex-ma">
+                        <p>June 23, 2022</p>
+                    </div>
+                    <h5>生日</h5>
+                    <h4><a href="">Happy birthday, baby!</a></h4>
+                    <p>一起过的第一个生日,<br>
+                        我们一起躺到凌晨等待第二天的到来<br>
+                        我和你跨过分秒，愿也可以跨过余生岁月。<br>
+                        这也是送你的第二个生日礼物。
+                    </p>
+                </div>
+                    
+            </div>
+            <div class="blog-3 blogs">
+                <div class="blo-p-3 blogs-photo">
+
+                </div>
+                <div class="text-main-blo">
+                    <div class="flex tex-ma">
+                        <p>April 13, 2022</p>
+                    </div>
+                    <h5>一起做饭</h5>
+                    <h4><a href="">The most beautiful cooking experience</a></h4>
+                    <p>你说一起做饭<br>
+                        很幸福有生活气息. <br>
+                        你时常炫耀着要给我做拿手好菜<br>
+                        看着你切菜的样子,真的很温暖,似乎我们已经结婚了。
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- blog区 采用flex里嵌套flex -->
+
+    <!-- 页脚 -->
+    <footer class="b4">
+        <!-- 第一行采用 横向的flex布局 -->
+        <div class="header-footer flex">
+            <h1> Contact Me</h1>
+            <div class="link-footer">
+                <a href=""><img src="./css/images/index-微信.png" alt=""></a>
+                <a href=""><img src="./css/images/index-QQ.png" alt=""></a>
+                <a href=""><img src="./css/images/index-github.png" alt=""></a>
+            </div>
+        </div>
+
+        <!-- 横向flex布局  3个单元格 -->
+        <div class="main-footer flex">
+            <div class="phone container-footer">
+                <div>
+                    <h5>Phone</h5>
+                    <h5><a href="">15926072152</a></h5>
+                </div>
+
+                <div class="email">
+                    <h5>E-mail</h5>
+                    <h5> <a href="">3434518927@qq.com</a></h5>
+                </div>
+            </div>
+            <div class="support-link container-footer">
+                <h2>Support Links</h2>
+                <ul>
+                    <li><a href="www.github.com">Github</a></li>
+                    <li><a href="www.zuel.edu.cn">Zuel</a></li>
+                    <li><a href="./contact.html">Contact me</a></li>
+                    <li><a href="">Support</a></li>
+                </ul>
+            </div>
+            <div class="address container-footer">
+                <h5>中南财经政法大学 <br>
+                    信息与安全工程学院, <br> 湖北省 武汉市.</h5>
+                <h5 class="date">Everyday: <span> 7 AM - 8 PM</span></h5>
+            </div>
+        </div>
+
+        <!-- 版权 -->
+        <div class="copy-footer">
+            <p>&copy;2022 my life. All rights reserved. Design by TianHuiHui</p>
+        </div>
+    </footer>
+    <!-- 页脚 -->
+</body>
+</html>

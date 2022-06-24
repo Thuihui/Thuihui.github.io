@@ -1,0 +1,151 @@
+/* 格式化样式 */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fff;
+    font-size: medium;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 400;
+    line-height: 1.5;
+    height: 100vh;
+}
+.contact-photo{
+    margin-top: 100px;
+}
+
+/* 背景图片方式实现图片插入 */
+.con-p-1{
+    background: url(./images/contact-1.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-main{
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.introduction{
+    margin-bottom: 100px;
+}
+
+/* flex布局重写 */
+div.contact-container{
+    margin: 0 auto;
+    width: 90%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 200px;
+}
+
+.contact-left{
+    width: 400px;
+}
+
+.contact-left h3{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.contact-left h6{
+    font-size: 18px;
+}
+
+.contact-left p{
+    font-size: 15px;
+}
+
+.contact-left .Details{
+    margin-top: 100px;
+    margin-left: 100px;
+    align-items: flex-start;
+    /* 副轴元素对齐顺序 */
+}
+
+.contact-right{
+    width: auto;
+    /* background-color: #ccffff; */
+}
+
+/* input样式设置 */
+input{
+    width: 600px;
+    height: 60px;
+    margin-bottom: 30px ;
+    background-color: aliceblue;
+    font-size: 18px;
+    border: 1px solid aliceblue;
+    border-radius: 15px;
+}
+
+/* 表单提交按钮样式 */
+.contact-right .input-submit{
+    margin-bottom: 0;
+    margin-top: 30px;
+    border: 1px solid red;
+    border-radius: 30px;
+    background-color: red;
+    width: 200px;
+    color: #fff;
+}
+textarea{
+    width: 600px;
+    height: 200px;
+    background-color: aliceblue;
+}
+
+.contact-photo{
+    width: 100%;
+    height: 40vh;
+    background-color: #ccffff;
+}
+
+
+.con-p-2{
+    background: url(./images/contact2.jpg) center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* web学习网站推荐区样式 */
+.table{
+    width:70%;
+    /* table高度自适应 */
+    margin:15px auto;
+    border:0;
+}
+.table th {
+    background-color:#00A5FF;
+    color:#FFFFFF
+}
+.table,.table th,.table td {
+    font-size:0.95em;
+    text-align:center;
+    padding:4px;
+    border-collapse:collapse;
+    /* 边框合并 */
+}
+.table th,.table td {
+    border: 1px solid #2087fe;
+    border-width:1px 0 1px 0;
+    border:2px inset #ffffff;
+    height: 60px;
+    /* 单元格高度60px */
+    /* 宽度自适应 */
+}
+.table tr {
+    border: 1px solid #ffffff;
+}
+
+/* 拟类 子选择器 */
+.table tr:nth-child(odd){
+    background-color:#aae1fe;
+}
+.table tr:nth-child(even){
+    background-color:#ffffff;
+}
+
+

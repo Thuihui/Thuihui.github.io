@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* 格式化样式 */
+
+/* flex布局 一维单元格布局 */
+/* flex布局  横向（默认） flex-direction：row 省略*/
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    column-gap: 120px;
+}
+
+/* flex布局  纵向flex-direction：column */
+.flex1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* 单元格之间间隙 */
+    row-gap: 40px;
+    column-gap: 120px;
+}
+
+/* grid布局  二维单元格布局 */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,400px);
+    grid-template-rows: 300px 300px;
+    align-content: center;
+    justify-content: center;
+    gap: 25px;
+    /* div之间的间隙 */
+    grid-template-areas:  'a c d'
+                          'b c e'
+    ;
+    /* 划分出2行三列的单元格 */
+    /* c为一各两行的单元格 */
+}
+
+/* body样式  主题为蓝色 */
+body{
+    background-color: #ccffff;
+    font-size: medium;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-weight: 400;
+    line-height: 1.5;
+    height: 100vh;
+}
+
+/* 导航  页眉样式  页眉采用fixed定位   导航采用 float：left */
+header{
+    width: 100%;
+    background-color: #99cfff;
+    height: 100px;
+    position: fixed;
+    /* 整体页眉fixed定位 */
+    top: 0;
+}
+
+
+/* 页眉头像样式  采用嵌套在fixed上的absolut定位 */
+header img{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 15px;
+    left: 10%;
+    border: 1px solid #99cfff;
+    border-radius: 50%;
+}
+
+
+/* 导航栏样式 */
+header .nav-container{
+    width: 100%;
+    height: 100%
+}
+/* 固定ul宽度 */
+header .nav-container ul{
+    list-style-type: none;
+    width: 400px;
+    height: 60px;
+    margin: 20px auto;
+}
+
+/* li宽度为ul25%  即平分 */
+header .nav-container ul li{
+    float: left;  
+    /* 只能在父级元素中浮动 */
+    width: 25%;
+    height: 60px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 60px;
+    
+}
+
+/* 超链接样式 遵循link visited hover 顺序 */
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+/* 介绍页样式 */
+/* 整体采用flex布局  flex-direction为row   横向*/
+.slider-container{
+    height: 86.6%;
+    /* 浏览器1519×746 */
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    /* flex布局 */
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+
+.slider-container .left-slider{
+    width: 30%;
+}
+
+
+/* .left-slider  嵌套flex布局   flex-direction为column   纵向*/
+.slider-container .left-slider #left{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* read more超链接样式 */
+#left div{
+    border: 4px solid black;
+    border-radius: 30px;
+    /* 边框为椭圆 */
+    width: 120px;
+    height: 40px;
+    margin-top: 50px;
+    font-size: 18px;
+    line-height: 40px;
+    /* 行高=div高度   使超链接垂直居中 */
+}
+
+.slider-container .left-slider div{
+    line-height: 2.2em;
+}
+
+.title-style{
+    color: black;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+
+/* 介绍页 右边样式 */
+.slider-container .right-slider{
+    flex: 1;
+    /* 独占剩余部分 */
+    background-color: black;
+}
+
+/* 背景不重复  填满  中心 */
+.slider-container .right-slider div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+.slider-container .right-slider div.bg-img1{
+    background-image: url(./images/index-slider.jpg);
+}
+
+
+.main{
+    width: 100%;
+    background-color: #ffff;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .introduction{
+    width: 100%;
+    height: 200px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.main .photo{
+    width: 100%;
+    /* height: 614px; */
+    overflow: hidden;
+    /* 超出部分隐藏 */
+}
+
+.main .statistics{
+    width: 100%;
+    /* height: 200px; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* background-color: black; */
+}
+
+
+
+
+.photo div img{
+    width: 400px;
+    height: 300px;
+
+}
+
+.photo div.backround-img1 img{
+    width: 400px;
+    height: 625px;
+}
+
+/* 将 子div与grid布局单元格对应 */
+.photo div:nth-child(1){
+    grid-area: a;
+}
+.photo div:nth-child(2){
+    grid-area: b;
+}
+
+/*第三个div对应c区域  占两行*/
+.photo div:nth-child(3){
+    grid-area: c;
+}
+.photo div:nth-child(4){
+    grid-area: d;
+}
+.photo div:nth-child(5){
+    grid-area: e;
+}
+
+
+.statistics div.counter{
+    width: 300px;
+    height: 150px;
+    /* background-color: #ffff; */
+}
+.statistics .flex1{
+    gap: 0;
+}
+
+.statistics .counter div{
+    width: 50px;
+    height: 50px;
+}
+.statistics .counter div img{
+    width: 50px;
+    height: 50px;
+}
+.statistics .counter h1{
+    flex: 2;
+    line-height: 66.6px;
+}
+
+.statistics .counter p{
+    flex: 1;
+    line-height: 33.4px;
+    text-align: center;
+}
+
+.introduction p{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+footer{
+    background-color: #9cf;
+    color: #ffff;
+}
+
+.header-footer{
+    margin: 0 auto;
+    width: 80%;
+    /* background-color: red; */
+    height: 150px;
+    gap: 0;
+    justify-content: space-between;
+}
+
+.main-footer{
+    margin: 0 auto;
+    width: 80%;
+    /* background-color: aquamarine; */
+
+}
+
+.main-footer .container-footer{
+    /* background-color: blue; */
+    width: 25%;
+    height: 250px;
+}
+
+.copy-footer{
+
+    color: #ffff;
+    width: 100%;
+    text-align: center;
+    height: 100px;
+}
+
+.main-footer ul{
+    list-style-type: none;
+    /* 取消列表前符号 */
+}
+
+.main-footer .support-link{
+    text-align: center;
+}
+
+/* 拟类  子选择器 */
+.main-footer .phone div:nth-child(1),.main-footer .address h5:nth-child(1){
+    margin-bottom: 40px;
+}
+
+h5{
+    font-size: 20px;
+}
+
+.link-footer a{
+    text-align: center;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 3px solid white;
+    border-radius: 50%;
+    margin-right: 12px;
+    background-color: #ffff;
+}
+
+.link-footer img{
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+}
